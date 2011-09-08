@@ -17,15 +17,17 @@ class Plugin_Youtube extends Plugin
 	 * Usage:
 	 * {pyro:youtube:embed video_id="abcxyz"}
 	 *
-	 * @param	array
 	 * @return	string
 	 */
 	function embed()
 	{
 		$video_id = $this->attribute('video_id');
-		var_dump($video_id);
+		
+		$height = $this->attribute('height', 385);
+		$width = $this->attribute('width', 640);
+		
 		if ($video_id) {
-			return '<iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/'.$video_id.'" frameborder="0"></iframe>';
+			return '<iframe class="youtube-player" type="text/html" width="'.$width.'" height="'.$height.'" src="http://www.youtube.com/embed/'.$video_id.'" frameborder="0"></iframe>';
 		}
 	}
 }
