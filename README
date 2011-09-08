@@ -3,11 +3,14 @@
  *
  * Plugin that allows you to embed a youtube video
  *
- * @package		PyroCMS
+ * @package  	PyroCMS
  * @author		Tim Greenwood
  * @copyright	Copyright (c) 2011 Tim Greenwood
  *
  */
 
 Useage:
+
 {pyro:youtube:embed video_id="abcxyz"}
+
+{pyro:youtube:embed video_id="abcxyz" height="300" width="400"}
