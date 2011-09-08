@@ -15,7 +15,7 @@ class Plugin_Youtube extends Plugin
 	 * Youtube
 	 *
 	 * Usage:
-	 * {pyro:youtube:embed video_id="abcxyz"}
+	 * {pyro:youtube:embed video_id="abcxyz" height="300" width="400"}
 	 *
 	 * @return	string
 	 */
